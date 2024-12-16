@@ -2,6 +2,14 @@
     <div class="upper">
     <img src="../assets/cold.jpg"  *ngIf="14 < 15">
     <img src="../assets/hotday.jpg"   *ngIf = "14 >= 15"> 
+
+     <div class="weather-data">
+        <div class="location"> Liaquat Pur </div>
+        <!-- this is pipe for number to show temp in dots -->
+        <div class="temp">
+            {{ 14.40 | number: '1.0-0'}}°C
+        </div>
+     </div>
     </div>
     <div class="lower">
 
